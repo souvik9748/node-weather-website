@@ -8,6 +8,8 @@ const { response } = require('express')
 
 const app=express()
 
+const port = process.env.PORT||3000
+
 //set up static directory to serve
 const pathToPublicDirectory=path.join(__dirname,'../public')
 app.use(express.static(pathToPublicDirectory))
@@ -63,6 +65,6 @@ app.get('*',(req,res)=>{
     res.render('error',{name:'Error 404!!',content:'Page not found!',creator:'Souvik'})
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is up and running...')
 })
