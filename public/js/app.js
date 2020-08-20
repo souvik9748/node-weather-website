@@ -18,7 +18,7 @@ indexForm.addEventListener('submit',(e)=>{
             }
             else{
                 message1.textContent="Location: "+data.location
-                message2.textContent="Weather Condition is "+data.weather_descriptions+". Temperature is "+data.temperature+" but it Feels Like "+data.feelslike
+                message2.textContent="Weather Condition is "+data.weather_descriptions+". Temperature is "+data.temperature+"°C but it Feels Like "+data.feelslike+"°C."
             }
         })
         })
