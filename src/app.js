@@ -28,7 +28,7 @@ app.get('/about',(req,res)=>{
     res.render('about',{name:'About page',content:'This is a Weather App. Here we have used weatherstack.com and positionstack.com APIs.',creator:'Souvik'})
 })
 app.get('/help',(req,res)=>{
-    res.render('help',{name:'Help page',content:'Atmanirbhar bano!',creator:'Souvik'})
+    res.render('help',{name:'Help page',content:'I need help! Please help me!',creator:'Souvik'})
 })
 
 app.get('/forecast',(req,res)=>{
